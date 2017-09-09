@@ -1,0 +1,830 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.1">
+  <description></description>
+  <groupId>66a85a83-015e-1000-5ae9-b8a51b6973cb</groupId>
+  <name>avro_schema_registry</name>
+  <snippet>
+    <connections>
+      <id>919ad03e-4271-372b-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>0bb3c8dd-7f52-3eff-0000-000000000000</id>
+        <type>FUNNEL</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>failure</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>df661641-40e1-3983-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>ae8075ae-5328-3f50-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>df661641-40e1-3983-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>4d732c1c-f88a-340c-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>b475fcef-ffb4-35ab-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>4d732c1c-f88a-340c-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>b0560238-f65c-39a2-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>ebd3cffd-335f-32fb-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>733304e2-aaa7-35c8-0000-000000000000</id>
+        <type>FUNNEL</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>4d732c1c-f88a-340c-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>009aa8da-93bb-37be-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>b659ca7f-d92d-385d-0000-000000000000</id>
+        <type>FUNNEL</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>df661641-40e1-3983-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>434aa8f1-0910-3f1b-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>b6e7f7d8-6ca8-363e-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>failure</selectedRelationships>
+      <selectedRelationships>incompatible</selectedRelationships>
+      <source>
+        <groupId>da224242-0df8-3446-0000-000000000000</groupId>
+        <id>4d732c1c-f88a-340c-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <controllerServices>
+      <id>921cec98-daa4-30b2-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <bundle>
+        <artifact>nifi-registry-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <comments></comments>
+      <descriptors>
+        <entry>
+          <key>employeeschema</key>
+          <value>
+            <name>employeeschema</name>
+          </value>
+        </entry>
+      </descriptors>
+      <name>AvroSchemaRegistry</name>
+      <persistsState>false</persistsState>
+      <properties>
+        <entry>
+          <key>employeeschema</key>
+          <value>{
+   "type" : "record",
+   "namespace" : "hortonworks",
+   "name" : "Employee",
+   "fields" : [
+      { "name" : "id" , "type" : "int" },
+      { "name" : "deptid" , "type" : "int" }
+   ]
+}</value>
+        </entry>
+      </properties>
+      <state>ENABLED</state>
+      <type>org.apache.nifi.schemaregistry.services.AvroSchemaRegistry</type>
+    </controllerServices>
+    <controllerServices>
+      <id>d610713f-64c9-362c-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <bundle>
+        <artifact>nifi-record-serialization-services-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <comments></comments>
+      <descriptors>
+        <entry>
+          <key>Schema Write Strategy</key>
+          <value>
+            <name>Schema Write Strategy</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-access-strategy</key>
+          <value>
+            <name>schema-access-strategy</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-registry</key>
+          <value>
+            <identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+            <name>schema-registry</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-name</key>
+          <value>
+            <name>schema-name</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-text</key>
+          <value>
+            <name>schema-text</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Date Format</key>
+          <value>
+            <name>Date Format</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Time Format</key>
+          <value>
+            <name>Time Format</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Timestamp Format</key>
+          <value>
+            <name>Timestamp Format</name>
+          </value>
+        </entry>
+        <entry>
+          <key>CSV Format</key>
+          <value>
+            <name>CSV Format</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Value Separator</key>
+          <value>
+            <name>Value Separator</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Include Header Line</key>
+          <value>
+            <name>Include Header Line</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Quote Character</key>
+          <value>
+            <name>Quote Character</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Escape Character</key>
+          <value>
+            <name>Escape Character</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Comment Marker</key>
+          <value>
+            <name>Comment Marker</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Null String</key>
+          <value>
+            <name>Null String</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Trim Fields</key>
+          <value>
+            <name>Trim Fields</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Quote Mode</key>
+          <value>
+            <name>Quote Mode</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Record Separator</key>
+          <value>
+            <name>Record Separator</name>
+          </value>
+        </entry>
+        <entry>
+          <key>Include Trailing Delimiter</key>
+          <value>
+            <name>Include Trailing Delimiter</name>
+          </value>
+        </entry>
+      </descriptors>
+      <name>CSVRecordSetWriter</name>
+      <persistsState>false</persistsState>
+      <properties>
+        <entry>
+          <key>Schema Write Strategy</key>
+        </entry>
+        <entry>
+          <key>schema-access-strategy</key>
+        </entry>
+        <entry>
+          <key>schema-registry</key>
+          <value>921cec98-daa4-30b2-0000-000000000000</value>
+        </entry>
+        <entry>
+          <key>schema-name</key>
+        </entry>
+        <entry>
+          <key>schema-text</key>
+        </entry>
+        <entry>
+          <key>Date Format</key>
+        </entry>
+        <entry>
+          <key>Time Format</key>
+        </entry>
+        <entry>
+          <key>Timestamp Format</key>
+        </entry>
+        <entry>
+          <key>CSV Format</key>
+        </entry>
+        <entry>
+          <key>Value Separator</key>
+        </entry>
+        <entry>
+          <key>Include Header Line</key>
+        </entry>
+        <entry>
+          <key>Quote Character</key>
+        </entry>
+        <entry>
+          <key>Escape Character</key>
+        </entry>
+        <entry>
+          <key>Comment Marker</key>
+        </entry>
+        <entry>
+          <key>Null String</key>
+        </entry>
+        <entry>
+          <key>Trim Fields</key>
+        </entry>
+        <entry>
+          <key>Quote Mode</key>
+        </entry>
+        <entry>
+          <key>Record Separator</key>
+        </entry>
+        <entry>
+          <key>Include Trailing Delimiter</key>
+        </entry>
+      </properties>
+      <state>ENABLED</state>
+      <type>org.apache.nifi.csv.CSVRecordSetWriter</type>
+    </controllerServices>
+    <controllerServices>
+      <id>680af6d6-c583-3462-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <bundle>
+        <artifact>nifi-record-serialization-services-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <comments></comments>
+      <descriptors>
+        <entry>
+          <key>schema-access-strategy</key>
+          <value>
+            <name>schema-access-strategy</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-registry</key>
+          <value>
+            <identifiesControllerService>org.apache.nifi.schemaregistry.services.SchemaRegistry</identifiesControllerService>
+            <name>schema-registry</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-name</key>
+          <value>
+            <name>schema-name</name>
+          </value>
+        </entry>
+        <entry>
+          <key>schema-text</key>
+          <value>
+            <name>schema-text</name>
+          </value>
+        </entry>
+      </descriptors>
+      <name>AvroReader</name>
+      <persistsState>false</persistsState>
+      <properties>
+        <entry>
+          <key>schema-access-strategy</key>
+        </entry>
+        <entry>
+          <key>schema-registry</key>
+          <value>921cec98-daa4-30b2-0000-000000000000</value>
+        </entry>
+        <entry>
+          <key>schema-name</key>
+        </entry>
+        <entry>
+          <key>schema-text</key>
+        </entry>
+      </properties>
+      <state>ENABLED</state>
+      <type>org.apache.nifi.avro.AvroReader</type>
+    </controllerServices>
+    <funnels>
+      <id>b659ca7f-d92d-385d-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>853.0</x>
+        <y>508.0</y>
+      </position>
+    </funnels>
+    <funnels>
+      <id>0bb3c8dd-7f52-3eff-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>1249.0</x>
+        <y>541.0</y>
+      </position>
+    </funnels>
+    <funnels>
+      <id>733304e2-aaa7-35c8-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>607.0</x>
+        <y>464.0</y>
+      </position>
+    </funnels>
+    <processors>
+      <id>b0560238-f65c-39a2-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>367.0</x>
+        <y>0.0</y>
+      </position>
+      <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>File Size</key>
+            <value>
+              <name>File Size</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Batch Size</key>
+            <value>
+              <name>Batch Size</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Data Format</key>
+            <value>
+              <name>Data Format</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Unique FlowFiles</key>
+            <value>
+              <name>Unique FlowFiles</name>
+            </value>
+          </entry>
+          <entry>
+            <key>generate-ff-custom-text</key>
+            <value>
+              <name>generate-ff-custom-text</name>
+            </value>
+          </entry>
+          <entry>
+            <key>schema.name</key>
+            <value>
+              <name>schema.name</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>File Size</key>
+            <value>0B</value>
+          </entry>
+          <entry>
+            <key>Batch Size</key>
+            <value>1</value>
+          </entry>
+          <entry>
+            <key>Data Format</key>
+            <value>Text</value>
+          </entry>
+          <entry>
+            <key>Unique FlowFiles</key>
+            <value>false</value>
+          </entry>
+          <entry>
+            <key>generate-ff-custom-text</key>
+            <value>1,2</value>
+          </entry>
+          <entry>
+            <key>schema.name</key>
+            <value>employeeschema</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>100 hours</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>GenerateFlowFile</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+    </processors>
+    <processors>
+      <id>b6e7f7d8-6ca8-363e-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>487.0</y>
+      </position>
+      <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Log Level</key>
+            <value>
+              <name>Log Level</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Log Payload</key>
+            <value>
+              <name>Log Payload</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Attributes to Log</key>
+            <value>
+              <name>Attributes to Log</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Attributes to Ignore</key>
+            <value>
+              <name>Attributes to Ignore</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Log prefix</key>
+            <value>
+              <name>Log prefix</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Log Level</key>
+            <value>info</value>
+          </entry>
+          <entry>
+            <key>Log Payload</key>
+            <value>false</value>
+          </entry>
+          <entry>
+            <key>Attributes to Log</key>
+          </entry>
+          <entry>
+            <key>Attributes to Ignore</key>
+          </entry>
+          <entry>
+            <key>Log prefix</key>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>LogAttribute</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.standard.LogAttribute</type>
+    </processors>
+    <processors>
+      <id>df661641-40e1-3983-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>960.0</x>
+        <y>186.0</y>
+      </position>
+      <bundle>
+        <artifact>nifi-standard-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>record-reader</key>
+            <value>
+              <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+              <name>record-reader</name>
+            </value>
+          </entry>
+          <entry>
+            <key>record-writer</key>
+            <value>
+              <identifiesControllerService>org.apache.nifi.serialization.RecordSetWriterFactory</identifiesControllerService>
+              <name>record-writer</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>record-reader</key>
+            <value>680af6d6-c583-3462-0000-000000000000</value>
+          </entry>
+          <entry>
+            <key>record-writer</key>
+            <value>d610713f-64c9-362c-0000-000000000000</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>ConvertRecord</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.standard.ConvertRecord</type>
+    </processors>
+    <processors>
+      <id>4d732c1c-f88a-340c-0000-000000000000</id>
+      <parentGroupId>da224242-0df8-3446-0000-000000000000</parentGroupId>
+      <position>
+        <x>352.0</x>
+        <y>260.0</y>
+      </position>
+      <bundle>
+        <artifact>nifi-kite-nar</artifact>
+        <group>org.apache.nifi</group>
+        <version>1.2.0.3.0.0.0-453</version>
+      </bundle>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Hadoop configuration files</key>
+            <value>
+              <name>Hadoop configuration files</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Record schema</key>
+            <value>
+              <name>Record schema</name>
+            </value>
+          </entry>
+          <entry>
+            <key>CSV charset</key>
+            <value>
+              <name>CSV charset</name>
+            </value>
+          </entry>
+          <entry>
+            <key>CSV delimiter</key>
+            <value>
+              <name>CSV delimiter</name>
+            </value>
+          </entry>
+          <entry>
+            <key>CSV quote character</key>
+            <value>
+              <name>CSV quote character</name>
+            </value>
+          </entry>
+          <entry>
+            <key>CSV escape character</key>
+            <value>
+              <name>CSV escape character</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Use CSV header line</key>
+            <value>
+              <name>Use CSV header line</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Lines to skip</key>
+            <value>
+              <name>Lines to skip</name>
+            </value>
+          </entry>
+          <entry>
+            <key>kite-compression-type</key>
+            <value>
+              <name>kite-compression-type</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Hadoop configuration files</key>
+          </entry>
+          <entry>
+            <key>Record schema</key>
+            <value>{
+   "type" : "record",
+   "namespace" : "hortonworks",
+   "name" : "Employee",
+   "fields" : [
+      { "name" : "id" , "type" : "int" },
+      { "name" : "deptid" , "type" : "int" }
+   ]
+}</value>
+          </entry>
+          <entry>
+            <key>CSV charset</key>
+            <value>utf8</value>
+          </entry>
+          <entry>
+            <key>CSV delimiter</key>
+            <value>,</value>
+          </entry>
+          <entry>
+            <key>CSV quote character</key>
+            <value>"</value>
+          </entry>
+          <entry>
+            <key>CSV escape character</key>
+            <value>\</value>
+          </entry>
+          <entry>
+            <key>Use CSV header line</key>
+            <value>false</value>
+          </entry>
+          <entry>
+            <key>Lines to skip</key>
+            <value>0</value>
+          </entry>
+          <entry>
+            <key>kite-compression-type</key>
+            <value>SNAPPY</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>ConvertCSVToAvro</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>incompatible</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style>
+        <entry>
+          <key>background-color</key>
+          <value>#8a3a3a</value>
+        </entry>
+      </style>
+      <type>org.apache.nifi.processors.kite.ConvertCSVToAvro</type>
+    </processors>
+  </snippet>
+  <timestamp>09/09/2017 09:00:19 EDT</timestamp>
+</template>
